@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
 
-##The EAN stack is present at https://github.com/arcticgupta/auth-mongoDB-express-nodejs
+##The MEN stack is present at https://github.com/arcticgupta/auth-mongoDB-express-nodejs
 
 ## Development server
 
