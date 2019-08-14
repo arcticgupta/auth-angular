@@ -1,0 +1,30 @@
+
+<!-- Table starts here -->
+<div *ngIf="lists.length > 0" style="text-align:center;">
+    <p>Table</p>
+    <table id="table" class="table table-striped"  style="margin: auto;width: 80%;padding: 20px; margin-bottom: 80px">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Priority Level</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col"> Delete </th>
+    
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let list of lists; index as i" >
+            <td scope="row">{{i+1}}</td>
+            <td>{{list.category}}</td>
+            <td>{{list.title}}</td>
+            <td>{{list.description}}</td>
+            <td> <button type="button" class="btn btn-primary" (click)="deleteList(list); $event.stopPropagation();">Delete</button></td>
+    
+          </tr>
+        </tbody>
+     </table>
+    
+     <app-add-list (addList)='onAddList($event)'> </app-add-list>
+</div>
+

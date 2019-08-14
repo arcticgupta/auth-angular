@@ -1,0 +1,19 @@
+<p style="text-align: center">User List</p>
+    <table id="table" class="table table-striped"  style="margin: auto;width: 80%;padding: 20px; margin-bottom: 80px;text-align: center">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Username</th>
+            <th scope="col">Role</th>
+            <th scope="col">Login As</th>   
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let info of infos; index as i" >
+            <td scope="row">{{i+1}}</td>
+            <td>{{info.username}}</td>
+            <td>{{info.role}}</td>
+            <td> <button type="button" class="btn btn-primary" (click)="loginAs(info)">Login As</button></td>   
+          </tr>
+        </tbody>
+     </table>
