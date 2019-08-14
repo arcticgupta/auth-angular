@@ -1,6 +1,7 @@
 # AngularSrc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+The EAN stack is included in auth-EAN repo.
 
 ## Development server
 
