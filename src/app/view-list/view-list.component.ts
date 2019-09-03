@@ -11,7 +11,6 @@ import { AuthenticationService } from '../services/authentication.service';
 })
 export class ViewListComponent implements OnInit {
 
-  //lists propoerty which is an array of List type
   private lists: List[] = [];
   constructor(private listServ: ListService, private authServ: AuthenticationService) { }
 

@@ -5,7 +5,6 @@
         <label for="title">Title</label>
         <input type="text" class="form-control" [(ngModel)]="newList.title" name="title" placeholder="Enter title" required>
       </div>
-
       <div class="form-group">
         <label for="category">Select Category</label>
         <select class="form-control" [(ngModel)]="newList.category" name = "category" placeholder="Select">
@@ -15,19 +14,14 @@
             <option value="Low">Low Prioirty</option>
         </select>
       </div>
-
       <div class="form-group">
         <label for="description">Description</label>
         <input type="text" class="form-control" [(ngModel)]="newList.description" name="description" placeholder="Enter description" required>
       </div>
-
       <div class="form-group" style="display:none">
           <label for="username">Username</label>
           <input type="text" class="form-control" [(ngModel)]="newList.username" name="username" placeholder="Enter username" required>
       </div>
-
       <button type="submit" class="btn btn-primary" ng-disabled="myForm.$pristine || bucketListForm.$invalid || bucketListForm.$pending">Submit</button>
-
-
     </form>
 </div>
