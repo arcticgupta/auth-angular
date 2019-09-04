@@ -15,7 +15,7 @@ export class ViewListComponent implements OnInit {
   constructor(private listServ: ListService, private authServ: AuthenticationService) { }
 
   ngOnInit() {
-    setTimeout(() => this.loadUserList(), 1500);
+    setTimeout(() => this.loadUserList(), 1000);
   }
 
   public loadLists() {
