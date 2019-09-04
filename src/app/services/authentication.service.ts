@@ -51,6 +51,15 @@ export class AuthenticationService {
     .pipe(map(res => res.json()))
   }
 
+  public getPaginatedUsers(page) {
+    let URI = `${this.authApi}`;
+    let headers = new Headers;
+    headers.append('Content-Type', 'application/json');
+    let body = JSON.stringify({page: page});
+    return this.http.post(URI, body, {headers: headers})
+    .pipe(map(res => res.json()))
+  }
+
   public saveToken(token: string): void {
     localStorage.setItem('mean-token', token);
     this.token = token;
